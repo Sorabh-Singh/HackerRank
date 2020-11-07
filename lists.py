@@ -10,4 +10,5 @@ if __name__ == '__main__':
             print(lis)
 
         else:
-            getattr(lis, command)(*(map(int, value)))
+            # getattr(object, function)(vars)
+            getattr(lis, command)(*(map(int, value)))  
