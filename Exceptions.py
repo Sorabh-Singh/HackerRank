@@ -8,13 +8,11 @@ for test in range(int(input())):
     except ValueError as e:
         print("Error Code:", e)
 
+# Approach:2 
 
-# except Exception as e:
-#     print(e)
-#     print("exception type is ", type(e).__name__)
-#     c = None
-
-# 3
-# 1 0
-# 2 $
-# 3 1
+for i in range(int(input())):
+    try:
+        a,b=map(int,input().split())
+        print(a//b)
+    except Exception as e:
+        print("Error Code:",e)
