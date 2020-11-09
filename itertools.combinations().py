@@ -1,3 +1,4 @@
+#Concept
 from itertools import combinations
 my_str, rep_size = input().split()
 
