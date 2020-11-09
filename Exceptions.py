@@ -1,3 +1,4 @@
+# Approach: 1
 for test in range(int(input())):
     try:
         a,b = map(int,input().split()) 
@@ -8,7 +9,7 @@ for test in range(int(input())):
     except ValueError as e:
         print("Error Code:", e)
 
-# Approach:2 
+# Approach: 2 
 
 for i in range(int(input())):
     try:
