@@ -25,6 +25,11 @@ Sample Output
 from collections import Counter
 words = Counter([input() for _ in range(int(input()))])
 print(len(words))
+for keys, values in words.items():
+    print(values, end=' ')
+
+# second approach:
+
+words = Counter([input() for _ in range(int(input()))])
+print(len(words))
 print(*words.values())
-# for keys, values in words.items():
-#     print(values, end=' ')
