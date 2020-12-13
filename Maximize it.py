@@ -9,10 +9,15 @@
 # 206
 
 
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# my solution 
 # k , M = (map(int, input().split()))
-# maxNum_from_list = [max(list(map(int, input().split()))) for _ in range(k)]
-# print(sum([i*i for i in maxNum_from_list ])%M)
+# print(sum([i*i for i in [max(list(map(int, input().split()))[1:]) for _ in range(k)]])%M)
 
-k , M = (map(int, input().split()))
-print(sum([i*i for i in [max(list(map(int, input().split()))) for _ in range(k)]])%M)
-# print(sum([i*i for i in maxNum_from_list ])%M)
+
+from itertools import product
+
+K,M = map(int,input().split())
+N = (list(map(int, input().split()))[1:] for _ in range(K))
+results = map(lambda x: sum(i**2 for i in x)%M, product(*N))
+print(max(results))
