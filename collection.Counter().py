@@ -4,7 +4,7 @@ no_of_shoes = int(input())
 sizes_in_stock = collections.Counter(map(int, input().split()))
 # print(sizes_in_stock )
 numCust = int(input())
-total_revenue =0
+total_revenue = 0
 
 for _ in range(numCust):
     size, price = map(int, input().split())
