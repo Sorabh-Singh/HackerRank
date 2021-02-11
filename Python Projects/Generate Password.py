@@ -15,3 +15,12 @@ if yes, enter 'c' or enter 'q' to quit.''')
     else:
         print("Thanks for using our services!!")
         exit()
+
+
+ANother approach:2
+
+import random
+passlen = int(input("enter the length of password"))
+s="abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
+p = "".join(random.sample(s,passlen ))
+print(p)
