@@ -6,11 +6,10 @@ roll_again = 'yes'
 while roll_again =="yes" or roll_again =="y":
 
     print("rollling the dice...")
-
-    first_val = random.randint(1, 6)
-    second_val = random.randint(1, 6)
-    print("Vlues are : ", first_val, second_val)
-
+    print("Values are : ")
+    print(random.randint(1, 6))
+    print(random.randint(1, 6))
+   
     roll_again = input("Enter yes or y for rolling dice again, any other key will terminate the loop! : ")
     # print("user provided input", roll_again)
 print("Thanks for your participation")
