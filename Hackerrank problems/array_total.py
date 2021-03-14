@@ -14,10 +14,11 @@ def printPairs(arr, arr_size, sum):
 			print("Pair with given sum "+ str(sum) +
 	" is (" + str(arr[i]) + ", " + str(temp) + ")")
 		s.add(arr[i])
+    
 
 # driver code
 A = [1, 4, 45, 6, 10, 8]
 n = 16
 printPairs(A, len(A), n)
 
-# This code is contributed by __Devesh Agrawal__
+
